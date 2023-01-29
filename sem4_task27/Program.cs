@@ -17,29 +17,28 @@
 
 }
 
-int NumberLen(int a)
+int NumberLenght(int len)
 {
-    int index = 0;
-    while (a > 0)
+    for (int i = 0; i > len; i++)
     {
-        a = a / 10;
-        index++;
+        len = len / 10;
     }
-    return index;
+    return len;
 }
 
-void Sum(int num, int len)
+void NumbersSum(int num, int len)
 {
     int sum = 0;
-    for (int i = 1; i <= len; i++)
+    for(int i = 1; i <= len; i++)
     {
-        sum = sum + (num % 10);
-        num = num / 10;
+        sum = sum + (num%10);
+        num = num /10;
     }
     Console.WriteLine(sum);
 }
 
-int num = InputNumber("Введите число: ");
-int len = NumberLen(num);
 
-Sum(num, len);
+int number = InputNumber("Введите число: ");
+int len = NumberLenght(number);
+
+NumbersSum(number, len);
