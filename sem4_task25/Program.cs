@@ -1,7 +1,7 @@
 ﻿int InputNumber(string str)
 {
     int number;
-    string text;
+    string ?text;
     while (true)
     {
         Console.Write(str);
