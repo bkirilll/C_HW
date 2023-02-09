@@ -1,6 +1,6 @@
 ﻿int[,,] FillMatrix(int m, int n, int h)
 {
-    int[,,] matr = new int[m*n*h];
+    int[,,] matr = new int[m,n,h];
     Random rand = new Random();
     for (int i = 0; i < m; i++)
     {
